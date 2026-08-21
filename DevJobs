@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Mural de Vagas de TI</title>
+
+
+</head>
+<body>
+<header class ="header">
+    <div class="container">
+        <h1 class = "logo">Dev<span>Jobs</span></h1>
+        <p class = "tagline">Encontre sua próxima vaga em tecnologia</p>
+    </div>
+</header>
+
+<main class ="main">
+    <section class="search-section container">
+        <label for="busca">Buscar vagas</label>
+        <input type="search" id="buscar" placeholder="Ex:React, Node, Remoto ...">
+    </section>
+
+    <section class="job-section container">
+        <h2 class="sr-only">Lista de Vagas</h2>
+        <div class="jobs-grid" id="jobs-id">
+            <!--deixe esse lugar para depois armazenar os cards de vagas -->
+            <!-- Card 1 de  vaga-->
+             <article class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
+                    <h3 class="job-card__title">Desenvolvedor Front-End React</h3>
+                    <p class="job-card__company">Empresa Simulada</p>
+                </div>
+                <div class="job_card__body">
+                    <p class="job-card__tech"> React - TypeScript - CSS</p>
+                    <p class="job-card__salary"> R$ 6.000 - R$9.000</p>
+                    <p class="job-card__location"> Remoto - BR</p>
+                </div>
+                <div class="job-card_footer">
+                    <button type="button" class="btn-primary">Ver detalhes</button>
+                </div>
+             </article>
+             <!--Coloque um novo card de vaga aqui-->
+
+             <article class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--presencial">Presencial</span>
+                    <h3 class="job-card__title">Desenvolvedor Pleno Back-End Java</h3>
+                    <p class="job-card__company">Empresa Sankhya</p>
+                </div>
+
+                <div class="job_card__body">
+                    <p class="job-card__tech">Angular - Java - JavaScript</p>
+                    <p class="job-card__salary"> R$ 10.000 - R$16.000</p>
+                    <p class="job-card__location">Presencial - BR</p>
+                </div>
+
+                <div class="job-card_footer">
+                    <button type="button" class="btn-primary">Ver detalhes</button>
+                </div>
+             </article>
+
+             <article class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
+                    <h3 class="job-card__title">Desenvolvedor Junior Back-End C#</h3>
+                    <p class="job-card__company">Empresa Martins</p>
+                </div>
+
+                <div class="job_card__body">
+                    <p class="job-card__tech">React - C# - Blazor</p>
+                    <p class="job-card__salary"> R$ 5.000 - R$ 8.000</p>
+                    <p class="job-card__location">Remoto - BR</p>
+                </div>
+
+                <div class="job-card_footer">
+                    <button type="button" class="btn-primary">Ver detalhes</button>
+                </div>
+             </article>
+
+             <article class="job-card">
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
+                    <h3 class="job-card__title">Editor de Video</h3>
+                    <p class="job-card__company">Autonomo</p>
+                </div>
+
+                <div class="job_card__body">
+                    <p class="job-card__tech">Edition - S25 ULTRA - CapCut</p>
+                    <p class="job-card__salary"> R$ 6.000 - R$12.000</p>
+                    <p class="job-card__location">Remoto - USA</p>
+                </div>
+
+                <div class="job-card_footer">
+                    <button type="button" class="btn-primary">Ver detalhes</button>
+                </div>
+             </article>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 DevJobs - Projeto Ling Prog Internet Uniube</p>
+    </div>
+</footer>
+
+</body>
+</html>
