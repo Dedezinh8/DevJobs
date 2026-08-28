@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevJobs - Mural de Vagas de TI</title>
-
+    <title>DevJobs - Mural de Vagas de Ti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -17,8 +20,13 @@
 
 <main class ="main">
     <section class="search-section container">
-        <label for="busca">Buscar vagas</label>
-        <input type="search" id="buscar" placeholder="Ex:React, Node, Remoto ...">
+        <label for="buscar">Buscar vagas</label>
+<input
+    type="search"
+    id="buscar"
+    placeholder="Ex: React, Node, Remoto..."
+>
+
     </section>
 
     <section class="job-section container">
@@ -78,25 +86,6 @@
                     <button type="button" class="btn-primary">Ver detalhes</button>
                 </div>
              </article>
-
-             <article class="job-card">
-                <div class="job-card__header">
-                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
-                    <h3 class="job-card__title">Editor de Video</h3>
-                    <p class="job-card__company">Autonomo</p>
-                </div>
-
-                <div class="job_card__body">
-                    <p class="job-card__tech">Edition - S25 ULTRA - CapCut</p>
-                    <p class="job-card__salary"> R$ 6.000 - R$12.000</p>
-                    <p class="job-card__location">Remoto - USA</p>
-                </div>
-
-                <div class="job-card_footer">
-                    <button type="button" class="btn-primary">Ver detalhes</button>
-                </div>
-             </article>
-
         </div>
     </section>
 </main>
