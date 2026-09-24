@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs — Mural de Vagas de TI</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container header__container">
+        <div class="header__brand">
+            <h1 class="logo">Dev<span>Jobs</span></h1>
+            <p class="tagline">Encontre sua próxima vaga em tecnologia</p>
+        </div>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+            🌙
+        </button>
+    </div>
+</header>
+    <main class="main">
+        <section class="search-section container">
+            <label for="busca">Buscar vagas</label>
+            <input type="search" id="busca" placeholder="Ex: React, Node, Remoto...">
+        </section>
+
+        <section class="jobs-section container">
+            <h2 class="sr-only">Lista de vagas</h2>
+            <p id="resultado-contagem" class="result-count" aria-live="polite"></p>
+            <div class="jobs-grid" id="jobs-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DevJobs — Projeto acadêmico</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
