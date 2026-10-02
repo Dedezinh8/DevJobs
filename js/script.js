@@ -16,15 +16,6 @@ const vagas = [
         tecnologias: ['Node.js', 'PostgreSQL'],
         salario: 'R$ 7.000 – R$ 10.000',
         local: 'São Paulo, SP'
-    },
-    {
-        id: 3,
-        titulo: 'Backend Java',
-        empresa: 'Sankhya',
-        tipo: 'presencial',
-        tecnologias: ['Java', 'SpringBoot'],
-        salario: 'R$ 8.000 - R$ 11.000',
-        local: 'Uberlândia, MG'
     }
 ];
 
@@ -36,7 +27,7 @@ function criarCard(vaga) {
     const badgeClass = {
         remoto: 'job-card__badge--remote',
         presencial: 'job-card__badge--onsite',
-        hibrido: 'job-card__badge--remote'
+        hibrido: 'job-card__badge--hybrid'
     }[vaga.tipo] || '';
 
     const tipoLabel = {
@@ -115,9 +106,10 @@ renderizarVagas(vagas);
 
 const inputBusca = document.getElementById('busca');
 
-function filtrarVagas(termo){
+function filtrarVagas(termo) {
     const busca = termo.trim().toLowerCase();
-    if(!busca) {
+
+    if (!busca) {
         return vagas;
     }
 
@@ -133,13 +125,14 @@ function filtrarVagas(termo){
     });
 }
 
-function atualizarContagem(qtd, termo){
-    const el = document.getElementById('resultado-contagem')
-    if(!termo.trim()) {
-        el.textContent = `${qtd} vagas disponiveis`;
-    } else{
-        el.textContent = `${qtd} vagas(s) encontrada (s) para ${termo}`;
-    }
+
+function atualizarContagem(qtd, termo) {
+  const el = document.getElementById('resultado-contagem');
+  if (!termo.trim()) {
+    el.textContent = `${qtd} vagas disponíveis`;
+  } else {
+    el.textContent = `${qtd} vaga(s) encontrada(s) para "${termo}"`;
+  }
 }
 
 inputBusca.addEventListener('input', (evento) => {
@@ -156,7 +149,7 @@ const btnTheme = document.getElementById('theme-toggle');
 
 function aplicarTema(tema) {
   document.body.classList.toggle('dark', tema === 'dark');
-  btnTheme.textContent = tema === 'dark' ? '🌙s' : '☀️';
+  btnTheme.textContent = tema === 'dark' ? '☀️' : '🌙';
   btnTheme.setAttribute('aria-label',
     tema === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'
   );
